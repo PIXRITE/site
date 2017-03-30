@@ -1,0 +1,17 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+    @include responsive-font(0.75vw, 14px, 20px, 16px);
+	min-width: 300px;
+	margin: 0;
+    font-family: $f_sans;
+    font-weight: 400;
+    line-height: 1;
+    color: $text;
+}

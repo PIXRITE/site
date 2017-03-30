@@ -1,0 +1,51 @@
+%heading {
+    margin: 0;
+    font-weight: normal;
+    color: $heading;
+    line-height: 1.2;
+}
+h1, .h1 {
+    @extend %heading;
+    @include responsive-font(2.25vw, 40px, 70px, 50px);
+}
+h2, .h2 {
+    @extend %heading;
+    @include responsive-font(2vw, 36px, 70px, 48px);
+}
+h3, .h3 {
+    @extend %heading;
+    @include responsive-font(1.75vw, 32px, 60px, 40px);
+}
+h4, .h4 {
+    @extend %heading;
+    @include responsive-font(1.5vw, 28px, 50px, 36px);
+}
+h5, .h5 {
+    @extend %heading;
+    @include responsive-font(1.25vw, 20px, 40px, 30px);
+}
+h6, .h6 {
+    @extend %heading;
+    @include responsive-font(1vw, 16px, 30px, 20px);
+}
+
+p, .p {
+    margin: 0;
+    @include responsive-font(0.75vw, 14px, 20px, 16px);
+    color: $text;
+    line-height: 1.5;
+}
+small {
+    font-size: 80%;
+}
+
+
+ul {
+    padding: 0;
+}
+
+li {
+    @include responsive-font(0.75vw, 14px, 20px, 16px);
+    color: $text;
+    line-height: 1.5;
+}

@@ -1,0 +1,51 @@
+// Colors
+$darkblue: #343F49;
+$blue: #4A8CCA;
+
+$black: #000000;
+$jet: #1a1a1a;
+$raven: #333333;
+$asher: #4d4d4d;
+$stone: #666666;
+$grey: #808080;
+$sterling: #999999;
+$heather: #b3b3b3;
+$pearl: #cccccc;
+$lilia: #eaeaea;
+$smoke: #FCFCFC;
+$white: #FFFFFF;
+
+$forest: #228b22;
+$amber: #f08c2d;
+$ruby: #c02f1d;
+$sky: #00a8ff;
+
+$primary: $darkblue;
+$secondary: $blue;
+$highlight: $blue;
+
+$text: $jet;
+$heading: $raven;
+$border: $pearl;
+$background: $white;
+$error: $ruby;
+
+// Fonts
+$f-sans: 'Open Sans', Arial, Helvetica, sans-serif;
+
+// Height
+$h-header: 40px;
+
+// Width
+$w-body: 1260px;
+
+// Padding
+$p-default: 14px;
+
+// Breakpoint
+$b-phone: 400px;
+
+// Speed
+$t-fast: 0.25s;
+$t-default: 0.5s;
+$t-slow: 1s;

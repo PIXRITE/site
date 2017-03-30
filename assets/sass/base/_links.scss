@@ -1,0 +1,10 @@
+a {
+    @include responsive-font(0.75vw, 14px, 20px, 16px);
+    @include link-colors($primary, $highlight, $secondary);
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

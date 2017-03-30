@@ -1,0 +1,30 @@
+button,
+.button {
+	background: none;
+	border: none;
+ 	font-family: $f_sans;
+	cursor: pointer;
+}
+
+%button {
+    @include responsive-font(1vw, 16px, 26px, 20px);
+	display: block;
+	width: 100%;
+	padding: 10px 12px;
+	text-align: center;
+	line-height: 1;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.primary_button {
+	@extend %button;
+    @include link-colors($white, $white);
+
+	&:focus,
+	&:hover {
+		
+	}
+}

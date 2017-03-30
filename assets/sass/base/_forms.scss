@@ -1,0 +1,153 @@
+*:focus {
+	outline-color: $highlight;
+}
+
+::-webkit-input-placeholder {
+   color: $sterling;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $sterling;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $sterling;
+}
+
+:-ms-input-placeholder {
+   color: $sterling;
+}
+
+
+// #FormBasics
+// ---------------------------------------
+form {
+    position: relative;
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	padding: 8px 6px;
+	border: none;
+}
+
+select {
+    padding: 7px 6px;
+}
+
+textarea {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 1.3;
+}
+
+label {
+	display: block;
+    font-size: 14px;
+	color: $text;
+    line-height: 20px;
+    
+    span {
+        float: right;
+        font-size: 12px;
+    }
+    
+    &.inline {
+        display: inline-block;
+        
+        input {
+            display: inline;
+            width: auto;
+            vertical-align: middle;
+        }
+    }
+}
+
+
+// #FormModules
+// ---------------------------------------
+.form_block {
+    position: relative;
+    clear: both;
+    margin-bottom: 16px;
+
+    &.buttons {
+        @include clearfix;
+        margin: 24px 0 0;
+    }
+}
+
+
+// #Helpers
+// ---------------------------------------
+.form--help_text {
+    margin-top: 4px;
+    font-size: 80%;
+    text-align: right;
+}
+
+.form--forgot_password {
+    float: right;
+    @include link-colors($text, $highlight);
+    padding-top: 6px;
+}
+
+.form--tooltip {
+    position: absolute;
+    top: 24px;
+    left: 101%;
+    width: 24px;
+    background-color: $primary;
+    font-size: 18px;
+    color: $text;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $highlight;
+    }
+}
+
+.form--or {
+    margin-top: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+
+
+// #Form Errors
+// ---------------------------------------
+.form--error_marker {
+    display: none;
+    position: absolute;
+    left: 101%;
+    bottom: 0;
+    width: 32px;
+    background-color: $error;
+    font-size: 24px;
+    color: $white;
+    text-align: center;
+    line-height: 32px;
+}
+
+.form--error_message {
+    display: none;
+    float: left;
+    margin-left: 6px;
+    font-size: 18px;
+    color: $error;
+    line-height: 32px;
+    
+    i {
+        width: 32px;
+        margin-right: 4px;
+        background-color: $error;
+        font-size: 24px;
+        color: $white;
+        text-align: center;
+        line-height: 32px;
+    }
+}
