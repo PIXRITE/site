@@ -8,8 +8,36 @@ $router->map( 'GET', '/', function() {
     require __DIR__ . '/pages/home.php';
 });
 
-$router->map( 'GET', '/about', function() {
-    require __DIR__ . '/pages/about.php';
+$router->map( 'GET', '/work', function() {
+    require __DIR__ . '/pages/work.php';
+});
+
+$router->map( 'GET', '/services', function() {
+    require __DIR__ . '/pages/services.php';
+});
+
+$router->map( 'GET', '/brand-design-services', function() {
+    require __DIR__ . '/pages/brand.php';
+});
+
+$router->map( 'GET', '/online-marketing-services', function() {
+    require __DIR__ . '/pages/marketing.php';
+});
+
+$router->map( 'GET', '/web-design-services', function() {
+    require __DIR__ . '/pages/web.php';
+});
+
+$router->map( 'GET', '/interface-design-services', function() {
+    require __DIR__ . '/pages/ux.php';
+});
+
+$router->map( 'GET', '/testimonials', function() {
+    require __DIR__ . '/pages/testimonials.php';
+});
+
+$router->map( 'GET', '/request-quote', function() {
+    require __DIR__ . '/pages/hire.php';
 });
 
 $router->map( 'GET', '/contact', function() {

@@ -1,9 +1,14 @@
-<?php include('pages/partials/head.php') ?>
+<?php
+$title = 'Home Page';
+$description = 'Description goes here.';
 
-<?php include('pages/partials/header.php') ?>
+include('pages/partials/head.php');
+include('pages/partials/header.php');
+?>
 
 
 
-<?php include('pages/partials/footer.php') ?>
-
-<?php include('pages/partials/foot.php') ?>
+<?php 
+include('pages/partials/footer.php');
+include('pages/partials/foot.php'); 
+?>
